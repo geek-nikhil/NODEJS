@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab assessment </title>
+</head>
+<body>
+    <script>
+    var  number = parseInt(prompt("enter the number"));
+    var square = number*number;
+    var chances =  5;
+    for(let i=0;i<5;i++){
+        let guess =parseInt(prompt("guess the square of a number,"  + "chance: " + chances ));
+        if(guess === square){
+            alert(" congratulations you got it");
+            break;
+        }
+        if(i===4){
+            alert("you lost chances are over");
+        }
+        chances--;
+    }
+        console.log(number);
+    </script>
+</body>
+</html>
