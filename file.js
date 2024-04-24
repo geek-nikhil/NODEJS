@@ -8,3 +8,5 @@ fs.readFile("./test.txt","utf-8",(err,result)=>{
 });
 
   fs.appendFileSync("./test.txt",new Date().getDate().toLocaleString()  + "\n");
+  const os = require('os')
+  console.log(os.cpus().length)
